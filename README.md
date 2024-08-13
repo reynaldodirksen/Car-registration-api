@@ -27,7 +27,8 @@ This project utilized a postgresql database which is set up separately from the 
 ```GRANT ALL PRIVILEGES ON DATABASE car_registration TO Reynaldo;```
 
 ```\c car_registration```
-```CREATE TABLE cars (
+```
+CREATE TABLE cars (
     id SERIAL PRIMARY KEY,
     registration_date DATE NOT NULL,
     model VARCHAR(50) NOT NULL,

@@ -3,7 +3,7 @@ This is a simple API built on NodeJS designed to perform Ceation, Reading, Updat
 The project was made using a Virtual Machine running Ubuntu.
 This project utilized a postgresql database which is set up separately from the NodeJS project itself.
 
-Prerequisites:
+# Prerequisites:
  - Linux System (preferably Ubuntu)
  - Bash
  - NodeJS and other packages
@@ -11,15 +11,15 @@ Prerequisites:
  - (Not properly implemented) Docker and Docker Compose
  - Environment variables setup
 
-Setting up environment
-To install necessary packages, there is a bash script setup.sh which will install and prompt the user to fill in some information.
-To run this script bash needs to be installed. Install bash using
+# Setting up environmen
+ - To install necessary packages, there is a bash script setup.sh which will install and prompt the user to fill in some information.
+ - To run this script bash needs to be installed. Install bash using
 ```sudo apt install bash```
 
-To ease installation make sure you are in the project directory
-Next, run setup.sh from a terminal by running ```bash setup.sh```
+ - To ease installation make sure you are in the project directory
+ - Next, run setup.sh from a terminal by running ```bash setup.sh```
 
-When prompted, copy and paste the following lines:
+ - When prompted, copy and paste the following lines:
 ```psql```
 
 ```CREATE DATABASE car_registration;```
@@ -37,17 +37,17 @@ When prompted, copy and paste the following lines:
     build_year INT NOT NULL,
     brand VARCHAR(50) NOT NULL,
     registered_by VARCHAR(50) NOT NULL
-);```
+);
+```
 
-When finished with creating the database, exit postgres
+ - When finished with creating the database, exit postgres
 
 
-This project makes use of environment variables.
-For ease of use, they are included for demo as .env
+ - This project makes use of environment variables. For ease of use, they are included for demo as .env
 
-WIP: It is not in the desired finished state, but an attempt was made to use makefile and docker.
+ - WIP: It is not in the desired finished state, but an attempt was made to use makefile and docker.
 
-To run this project, run app.js by executing ```node src/app.js```
+ - To run this project, run app.js by executing ```node src/app.js```
 
 For testing purposes there is a bash script included (curl.sh) for demonstration purposes.
 This project uses JWT tokens generation and validation, therefore there is a file included ```generateToken.js```, which contains the necessary information to generate a valid JWT token.

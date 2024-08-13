@@ -54,8 +54,6 @@ This project uses JWT tokens generation and validation, therefore there is a fil
 Before running curl.sh, generate a token by running ```node src/generateToken.js``` and copying the output to curl.sh.
 Then you can run ```bash curl.sh``` when app.js is running to test this for now.
 
-As of now, there is a problem with the connection to the database from NodeJS.
-From terminal connection and execution of queries is possible, but from the project, the queries get stuck in Limbo.
-JWT token generation and validation is implemented, and connection to the database is successful.
+As of now, JWT token generation and validation is implemented, connection to the database is working, and queries are working.
 
-Note: There is some problem with the up-to-date versions of this JWT package and nodejs, therefore it could be possible that you need to downgrade to version 8.5.2 (learned this the hard way). 
+Note: There is some problem with the up-to-date versions of this JWT package and nodejs, therefore version 8.5.1 is used(learned this the hard way). 

@@ -4,7 +4,7 @@ sudo apt install npm
 sudo ln -s /usr/bin/nodejs /usr/bin/node
 
 npm install express typescript
-npm install jsonwebtoken
+npm install jsonwebtoken@8.5.1
 npm install pg
 npm install dotenv
 sudo apt install postgresql
